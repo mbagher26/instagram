@@ -1,0 +1,67 @@
+#app {
+    height: 100%;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slick-next.slick-prev {
+    border-radius: 50%;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: #baa2a2
+}
+
+.title-slider {
+    font-size: 10px;
+    width: 633px;
+    margin: 33px;
+
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+.avatar {
+    border-radius: 50%;
+
+}
+
+._aarh {
+    left:-5px;
+    position:absolute;
+    top:-5px;
+    height:66px;
+    width:66px
+}
+
+.css-q0jece-MuiAvatar-root {
+    width: 50px !important;
+    height: 50px !important;
+}
