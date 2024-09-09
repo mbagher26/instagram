@@ -1,2 +1,11 @@
+.App {
+  position: relative;
+  left: 140px;
+}
 
-
+.slick-slide {
+  width: 80px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
