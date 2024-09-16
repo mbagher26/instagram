@@ -1,7 +1,10 @@
 .home-container {
+    width: 1268px;
+    position: relative;
+    left: 260px;
+    right: 0;
     display: flex;
     flex-direction: row;
-    /* gap: 50px; */
     justify-content: space-evenly;
     padding: 12px;
     margin: 33px;
