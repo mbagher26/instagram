@@ -1,10 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
-import data from '../../data/Story'
+
 import { Avatar } from '@mui/material';
 import './Header.css'
 
-function Header() {
+function Header({data}) {
+
     var settings = {
         dots: true,
         infinite: true,
