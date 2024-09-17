@@ -51,9 +51,17 @@
     gap: 25px;
 }
 
-.slick-slider {
+.story-home {
     width: 666px;
 }
+
+
+
+/* .avatar {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+} */
 
 .hover:hover {
     background-color: rgb(245, 237, 237);
