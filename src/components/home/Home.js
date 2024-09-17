@@ -21,6 +21,7 @@ import Comment from "../../Icons/Comment";
 import dataPost from '../../data/Post';
 import Button from '@mui/material/Button';
 import data from '../../data/Suggested';
+import { Storys } from '../../data/Story.js';
 
 
 const ExpandMore = styled((props) => {
@@ -66,7 +67,9 @@ function Home() {
     return (
         <div className="home-container">
             <div className="home">
-                <Header />
+                <div className='story-home'>
+                    <Header  data={Storys} width={75} height={75}/>
+                </div>
                 <div className="home">
 
                     {dataPost && dataPost.map(post =>
@@ -83,8 +86,8 @@ function Home() {
                                         <MoreHorizOutlinedIcon />
                                     </IconButton>
                                 }
-                                subheader={post.title}
-                                title={post.city}
+                                subheader={post.city}
+                                title={post.title}
                             />
                             <CardMedia
                                 component="img"
@@ -168,7 +171,7 @@ function Home() {
                 </div>
                 <div>
                     {data && data.map(item =>
-                        <div key={item.id} className="flex-row-space-between hover" style={{marginTop: '5px'}} >
+                        <div key={item.id} className="flex-row-space-between hover" style={{ marginTop: '5px' }} >
                             <div className="flex-row" style={{ width: '270px' }}>
                                 <Avatar sx={{ marginRight: '12px' }} alt={item.title} src={item.img} />
                                 <Typography>{item.title}</Typography>
