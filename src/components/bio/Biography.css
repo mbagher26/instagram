@@ -1,0 +1,103 @@
+.bio {
+    position: absolute;
+    top: 10px;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    top: 40px;
+}
+
+.bio-content-r-1 {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.bio-title {
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn {
+    background-color: rgb(239, 239, 239) ;
+    color: black ;
+    border: none;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    width: 175px;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    width: 140px; 
+    height: 140px;
+    border: 2px solid rgb(239, 239, 239);
+    border-radius: 50%;
+}
+
+.bio-content-r-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.span {
+    font-weight: 500;
+}
+
+.bio-content-r-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+}
+
+.bio-content-r-3 h5 {
+    margin: 3px;
+}
+
+.bio-content-r-3 p {
+    margin: 3px;
+}
+
+.btn-bigelowtea {
+    border: none;
+    border-radius: 25px;
+    height: 35px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.a-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
