@@ -72,4 +72,51 @@ const Storys = [
 
     }
 ]
-export default Storys
+export {Storys}
+
+
+const BigelowStory = [
+    {
+        id: 1,
+        title: "Signatur",
+        img: "/Images/signatur.jpg"
+
+    },  {
+        id: 2,
+        title: "Fon Love",
+        img: "/Images/love.jpg"
+
+    },  {
+        id: 3,
+        title: "Botanicals",
+        img: "/Images/botanicals.jpg"
+
+    },  {
+        id: 4,
+        title: "Employees",
+        img: "/Images/employees.jpg"
+
+    },  {
+        id: 5,
+        title: "Over Ice",
+        img: "/Images/over ice.jpg"
+
+    },  {
+        id: 6,
+        title: "Community",
+        img: "/Images/community.jpg"
+
+    },  {
+        id: 7,
+        title: "Our Impact",
+        img: "/Images/employees.jpg"
+
+    },  {
+        id: 8,
+        title: "Benefits",
+        img: "/Images/benefits.jpg"
+
+    }
+]
+export {BigelowStory}
+
