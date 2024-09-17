@@ -1,0 +1,42 @@
+.profile-container {
+    width: 1268px;
+    height: 100vh;
+    position: relative;
+    right: 0;
+    left: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-biglowtea {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 340px;
+}
+
+.post-container {
+    position: absolute;
+    top: 470px;
+}
+
+.title-slider {
+    font-size: 10px;
+    width: 900px;
+    margin: 33px;
+
+}
+
+.avatar {
+    border: 2px solid rgb(239, 239, 239);
+    border-radius: 50%;
+}
+
+.slick-slider {
+    width: 100%;
+}
