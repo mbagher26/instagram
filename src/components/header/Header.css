@@ -48,10 +48,7 @@ body {
     display: none !important;
 }
 
-.avatar {
-    border-radius: 50%;
 
-}
 
 ._aarh {
     left:-5px;
@@ -65,3 +62,4 @@ body {
     width: 50px !important;
     height: 50px !important;
 }
+
