@@ -1,25 +1,20 @@
 import './App.css';
-import Header from './components/header/Header';
-import Home from './components/home/Home';
 import Sidbar from './components/sidebar/Sidebar';
 import React from "react";
-
+import { useRoutes } from 'react-router-dom';
+import routes from './routes';
 
 function App() {
- 
-    
+
+  let Router = useRoutes(routes);
+
   return (
     <div className="App">
       <Sidbar />
-      <Home />
-
-
+      {Router}
     </div>
   );
 
-
-
- 
 }
 
 export default App;
