@@ -3,9 +3,9 @@ import {BiglowteaPost} from '../../data/PostData.js';
 
 function Posts() {
     return (
-        <div>
-           <Post BiglowteaPost={BiglowteaPost}/>
-        </div>
+        
+           <Post BiglowteaPost={BiglowteaPost} width={300} height={300} />
+        
     );
 }
 
