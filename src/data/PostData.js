@@ -34,4 +34,41 @@ const Post = [
         caption4: " Add rice and stir very gently to distribute. Top with artichokes and peppers",
     }
 ]
-export default Post   
+export {Post}   
+
+
+const BiglowteaPost = [
+    {
+        id: 1,
+        title: 'cup',
+        description: 'When life gives you lemons... drink more tea ☕ Take 20% off all Bigelow teas featuring lemon sourced from a family farm in California. Stock up on your favorites and discover new blends. Link in bio to shop the lemony goodness🍋',
+        img: '/Images/cup.jpg',
+    }, {
+        id: 2,
+        title: 'cold water',
+        description: 'Hanging onto every little minute of summer while sipping on Bigelow Botanicals Cold Water Infusions. Light, refreshing, and oh so delicious! Link in bio to shop your favorite flavors!',
+        video: '/Video/Cold Water Infusions.mp4',
+    }, {
+        id: 3,
+        title: 'biglowtea limo',
+        description: 'A dash of honey is one of our favorite additions to a warm mug of tea. Add Bigelow Benefits® THROAT DEFENSE ginger honey lemon herbal tea and you have a tasty and healthy addition to your tea drinking day! Link in bio to learn more about why honey has been used for thousands of year!',
+        img: '/Images/biglowtea_limo.jpg'
+    }, {
+        id: 4,
+        title: 'biglowtea peach',
+        description: 'Did you know rosehips come from a varietal of the rose plant and are naturally high in Vitamin C? This tangy ingredient also adds depth to many of our recipes. Link in bio to shop. Enter code ROSEHIPS20 at checkout to take 20% off our teas that include rosehips.',
+        img: '/Images/biglowtea_peach.jpg'
+    }, {
+        id: 5,
+        title: 'biglowtea ice',
+        description: "PSA: It's still summer! Enjoy home brewed Bigelow teas over ice for a refreshing twist on all your favorites. Use different flavors to create your own blend over ice. Link in bio to learn how.",
+        img: '/Images/biglowtea_ice.jpg'
+    }, {
+        id: 6,
+        title: 'biglowtea relaxing',
+        description: 'Take a moment for YOU today with a good book and an even better mug of your favorite tea.',
+        img: '/Images/biglowtea_relaxing.jpg'
+    }
+]
+
+export {BiglowteaPost}
