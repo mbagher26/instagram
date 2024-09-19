@@ -18,7 +18,7 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import './Home.css';
 import { Stack } from "@mui/material";
 import Comment from "../../Icons/Comment";
-import dataPost from '../../data/Post';
+import {Post} from '../../data/PostData.js';
 import Button from '@mui/material/Button';
 import data from '../../data/Suggested';
 import { Storys } from '../../data/Story.js';
@@ -72,7 +72,7 @@ function Home() {
                 </div>
                 <div className="home">
 
-                    {dataPost && dataPost.map(post =>
+                    {Post && Post.map(post =>
 
                         <Card key={post.id} sx={{ maxWidth: 450, margin: '30px' }}>
                             <CardHeader
