@@ -56,14 +56,8 @@
 }
 
 
-
-/* .avatar {
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-} */
-
 .hover:hover {
     background-color: rgb(245, 237, 237);
     border-radius: 5px;
 }
+
