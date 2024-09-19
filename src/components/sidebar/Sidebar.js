@@ -50,14 +50,11 @@ function Sidbar() {
                 {text === 'Home' && <HomeOutlinedIcon />}
                 {text === 'Search' && <SearchIcon />}
                 {text === 'Explore' && <ExploreOutlinedIcon />}
-                {text === 'Reels' && <ReelsIcons />}
+                {text === 'Reels' && <ReelsIcons width={24} height={24}/>}
                 {text === 'Messages' && <Badge color="error" badgeContent={4}><Messages /></Badge>}
                 {text === 'Notifications' && <FavoriteBorderOutlinedIcon />}
                 {text === 'Create' && <AddBoxOutlinedIcon />}
                 {text === 'Profile' && <Avatar sx={{ width: 30, height: 30 }} alt="mohammad_bagher" src="/Images/mohammad_bagher.jpg"/>}
-
-
-
 
               </ListItemIcon>
               <ListItemText
