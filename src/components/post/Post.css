@@ -4,7 +4,220 @@
 
 .post-icon {
     position: absolute;
-    top:5px;
+    top: 5px;
     left: 5px;
     color: white;
+}
+
+.css-c09uja-MuiPaper-root-MuiDialog-paper {
+
+    width: 900px !important;
+    max-width: 900px !important;
+    height: 700px !important;
+    max-height: none !important;
+
+}
+
+.css-1kxd7on-MuiDialogContent-root {
+    padding: 0 !important;
+}
+
+.dialog-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 50%;
+}
+
+.content img {
+    width: 100%;
+    height: 696px;
+}
+
+.description {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img,
+.caption img {
+    width: 50px;
+    height: 50px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-title {
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.description img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icon-more-header:hover {
+    color: rgb(115, 115, 115);
+}
+
+.caption {
+    display: flex;
+    flex-direction: row;
+}
+
+.caption-text {
+    font-size: 15px;
+}
+
+.span {
+    height: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.caption-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.caption-link a {
+    text-decoration: none;
+}
+
+.caption-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.detail-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 460px;
+}
+
+.comment-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: small;
+}
+
+.comment-text h3 {
+    margin: 0;
+}
+
+.comment-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.comment-button a,
+div {
+    cursor: pointer;
+}
+
+.footer-container {
+    border-top: 1px solid rgb(219, 213, 213);
+    border-bottom: 1px solid rgb(219, 213, 213);
+    padding: 5px 0;
+
+}
+
+.footer-container h5,
+p {
+    margin: 2px;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.foooter-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.add-comment-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+.comment-input {
+    width: 100%;
+    border: none;
+    padding: 0;
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+
+.comment-input:focus {
+    border: none;
+    outline: none;
 }
