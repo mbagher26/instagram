@@ -8,12 +8,13 @@ import Messages from "../../Icons/Messages";
 import SentimentSatisfiedOutlinedIcon from '@mui/icons-material/SentimentSatisfiedOutlined';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import { Dialog, DialogContent } from "@mui/material";
+import { Dialog, DialogContent, Tooltip } from "@mui/material";
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import './Post.css';
 import Slider from "react-slick";
-
+import { Link } from "react-router-dom";
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 
 function Post({ BiglowteaPost, width, height }) {
@@ -67,7 +68,10 @@ function Post({ BiglowteaPost, width, height }) {
                     <DialogContent>
                         <div className="dialog-content">
                             <div className="content">
-                                <img src="/Images/cup.jpg" alt="cup" />
+                                <Tooltip title="Limone tea" className="content-tooltip">
+                                </Tooltip>
+                                    <img src="/Images/cup.jpg" alt="cup" />
+                                <Link to="/shop" className="shop-link">Veiw shop <KeyboardArrowRightIcon/></Link>
                             </div>
                             <div className="description">
                                 <div className="header">
@@ -187,7 +191,6 @@ function Post({ BiglowteaPost, width, height }) {
                     </DialogContent>
                 </Slider>
             </Dialog>
-
         </>
     );
 }
