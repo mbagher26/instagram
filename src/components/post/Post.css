@@ -109,7 +109,6 @@
 .description img {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
 }
 
 .icon-more-header:hover {
@@ -165,6 +164,9 @@
     gap: 5px;
 }
 
+.comment img {
+    border-radius: 50%;
+}
 .detail-desc {
     display: flex;
     flex-direction: column;
@@ -245,4 +247,30 @@ p {
 .comment-input:focus {
     border: none;
     outline: none;
+}
+
+.body {
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    
+}
+
+.body-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.body-img img {
+    width: 150px;
+    height: 250px;
+}
+
+.desc {
+    text-align: justify;
+    direction: rtl;
 }
