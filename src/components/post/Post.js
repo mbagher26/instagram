@@ -158,6 +158,8 @@ function Post({ BiglowteaPost, width, height }) {
                     <DialogContent>
                         <div className="dialog-content">
                             <div className="content">
+                                <div className="one">1</div>
+                                <div className="two">2</div>
                                 <img src="/Images/cup.jpg" alt="cup" />
                             </div>
                             <div className="description">
@@ -179,8 +181,8 @@ function Post({ BiglowteaPost, width, height }) {
 
                                 <div className="body">
                                     <div className="body-img">
-                                        <img src="/Images/cup.jpg" alt="" />
-                                        <img src="/Images/cup.jpg" alt="" />
+                                        <img className="img-one" src="/Images/cup.jpg" alt="" />
+                                        <img className="img-two" src="/Images/cup.jpg" alt="" />
                                     </div>
                                     <div className="body-desc">
                                         <p className="desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده</p>
