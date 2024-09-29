@@ -40,6 +40,26 @@
     height: 150px;
 }
 
+.one ,.two {
+    position: absolute;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(115, 115, 115, 0.3);
+}
+
+.one {
+    top: 210px;
+    right: 300px;
+}
+
+.two {
+    top: 450px;
+    right: 150px;
+}
+
 .shop-link {
     position: absolute;
     left: 0;
@@ -59,7 +79,7 @@
 
 .content img {
     width: 100%;
-    height: 696px;
+    height: 698px;
 }
 
 .description {
@@ -264,6 +284,19 @@ p {
     align-items: center;
     gap: 10px;
 }
+
+.img-default {
+   opacity: 1;
+}
+
+.img-on {
+    opacity: 1;
+}
+
+.img-off {
+    opacity: 0.3;
+}
+
 
 .body-img img {
     width: 150px;
