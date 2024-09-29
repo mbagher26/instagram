@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReelsIcons from "../../Icons/ReelsIcon";
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import Comment from "../../Icons/Comment";
@@ -28,6 +28,9 @@ function Post({ BiglowteaPost, width, height }) {
     };
 
     const [open, setOpen] = React.useState(false);
+    const [isOneHover, setIsOneHover] = useState(false);
+    const [isTwoHover, setIsTwoHover] = useState(false);
+    const isBothLeave = !isOneHover && !isTwoHover
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -70,8 +73,8 @@ function Post({ BiglowteaPost, width, height }) {
                             <div className="content">
                                 <Tooltip title="Limone tea" className="content-tooltip">
                                 </Tooltip>
-                                    <img src="/Images/cup.jpg" alt="cup" />
-                                <Link to="/shop" className="shop-link">Veiw shop <KeyboardArrowRightIcon/></Link>
+                                <img src="/Images/cup.jpg" alt="cup" />
+                                <Link to="/shop" className="shop-link">Veiw shop <KeyboardArrowRightIcon /></Link>
                             </div>
                             <div className="description">
                                 <div className="header">
@@ -158,8 +161,16 @@ function Post({ BiglowteaPost, width, height }) {
                     <DialogContent>
                         <div className="dialog-content">
                             <div className="content">
-                                <div className="one">1</div>
-                                <div className="two">2</div>
+                                <div
+                                    onMouseEnter={() => setIsOneHover(true)}
+                                    onMouseLeave={() => setIsOneHover(false)}
+                                    className="one">1</div>
+
+                                <div
+                                    onMouseEnter={() => setIsTwoHover(true)}
+                                    onMouseLeave={() => setIsTwoHover(false)}
+
+                                    className="two">2</div>
                                 <img src="/Images/cup.jpg" alt="cup" />
                             </div>
                             <div className="description">
@@ -181,8 +192,8 @@ function Post({ BiglowteaPost, width, height }) {
 
                                 <div className="body">
                                     <div className="body-img">
-                                        <img className="img-one" src="/Images/cup.jpg" alt="" />
-                                        <img className="img-two" src="/Images/cup.jpg" alt="" />
+                                        <img className={`img-default ${isOneHover && 'img-on'} ${isTwoHover && 'img-off'}`} src="/Images/cup.jpg" alt="cup" />
+                                        <img className={`img-default ${isTwoHover && 'img-on'} ${isOneHover && 'img-off'}`} src="/Images/cup.jpg" alt="cup" />
                                     </div>
                                     <div className="body-desc">
                                         <p className="desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده</p>
