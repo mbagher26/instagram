@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import ReelsIcons from "../../Icons/ReelsIcon";
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import Comment from "../../Icons/Comment";
@@ -30,7 +30,19 @@ function Post({ BiglowteaPost, width, height }) {
     const [open, setOpen] = React.useState(false);
     const [isOneHover, setIsOneHover] = useState(false);
     const [isTwoHover, setIsTwoHover] = useState(false);
-    const isBothLeave = !isOneHover && !isTwoHover
+    const isBothLeave = !isOneHover && !isTwoHover;
+    const [display, setDisplay] = useState(false);
+    const [hoveredPostId, setHoveredPostId] = useState(null);
+
+
+
+    const handelMouseEnter = (postId) => {
+        setHoveredPostId(postId);
+    }
+
+    const handelMouseLeave = () => {
+        setHoveredPostId(null);
+    }
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -42,9 +54,19 @@ function Post({ BiglowteaPost, width, height }) {
 
     return (
         <>
-
             {BiglowteaPost && BiglowteaPost.map(item => (
                 <div onClick={handleClickOpen} className="post">
+                    <div
+                        onMouseEnter={() => handelMouseEnter(item.id)}
+                        onMouseLeave={handelMouseLeave}
+                    >
+                        <div className="post-circle"
+
+                        ></div>
+                        {hoveredPostId === item.id &&
+                            <img onClick={handleClickOpen} className="img-hover" src="/Images/Limone tea.jpg" />
+                        }
+                    </div>
                     <img style={{ width: width, height: height }} key={item.id} src={item.img} alt={item.title} />
                     <div className="post-icon">
                         {item.icon === 'shop' && <LocalMallIcon />}
