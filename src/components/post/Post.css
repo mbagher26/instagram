@@ -2,6 +2,27 @@
     position: relative;
 }
 
+.post-circle {
+    border: 2px solid rgb(115, 115, 115);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 75px;
+    top: 100px;
+    background-color: rgba(115, 115, 115, 0.1);
+}
+
+.img-hover {
+    width: 275px;
+    height: 370px;
+    position: absolute;
+    top: 125px;
+    right: 12px;
+    left: 12px;
+    z-index: 1;
+}
+
 .post-icon {
     position: absolute;
     top: 5px;
