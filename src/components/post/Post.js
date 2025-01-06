@@ -247,9 +247,16 @@ function Post({ BiglowteaPost, width, height }) {
                                 </div>
 
                                 <div className="post-show">
-                                  {BiglowteaPost && BiglowteaPost.map(item =>
-                                    <img style={{width:'208px', height:'200px', margin: '4px 0'}} key={item.id} src={item.img} alt={item.title}/>
-                                  )}
+                                    {BiglowteaPost && BiglowteaPost.map(item =>
+                                        <div key={item.id} className="">
+                                            <img style={{ width: '208px', height: '200px', margin: '4px 0' }}  src={item.img} alt={item.title} />
+                                            <div>
+                                                <p>{item.title}</p>
+                                                <button>buy</button>
+                                            </div>
+                                            <p>{item.description}</p>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
