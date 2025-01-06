@@ -328,3 +328,13 @@ p {
     text-align: justify;
     direction: rtl;
 }
+
+.post-show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 617px;
+    overflow-y: scroll;
+}
+
